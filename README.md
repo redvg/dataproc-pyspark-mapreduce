@@ -28,6 +28,8 @@ run create_cluster.sh \
 (chmod u+x ...) \
 submit job
 
+![Screenshot](image.png)
+
 ## NB
 the above does take into account auth for bucket files \
 either make files in the bucket public, create iam rules for cluster, \
