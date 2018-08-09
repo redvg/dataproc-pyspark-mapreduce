@@ -5,7 +5,8 @@ sc = SparkContext("local")
 
 print 'hello from pyspark---'
 
-file = sc.textFile("gs://BUCKET_NAME/FOLDER_NAME/input.txt")
+# TODO: feed bucket folder from args or env
+file = sc.textFile("gs://BUCKET_NAME/dataproc1/input.txt")
 dataLines = file.map(lambda s: s.split(",")).map(lambda x : (x[0], [x[1]]))
 print dataLines.take(100)
 
