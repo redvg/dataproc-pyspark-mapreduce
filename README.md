@@ -34,3 +34,6 @@ submit job
 the above does not take into account auth for bucket files for gsutil in bash\
 either make files in the bucket public, create iam rules for cluster, \
 or access via oauth2 \
+e.g. https://cloud.google.com/storage/docs/access-control/making-data-public#storage-make-object-public-python \
+`gsutil acl ch -u AllUsers:R gs://[BUCKET_NAME]/[OBJECT_NAME]` \
+`gsutil iam ch allUsers:objectViewer gs://[BUCKET_NAME]`
