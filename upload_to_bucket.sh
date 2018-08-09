@@ -1,10 +1,5 @@
 #!/bin/sh
 
-if [ "$#" -ne 1 ]; then
-   echo "Usage:  ./upload_to_bucket.sh bucket-name folder-name"
-   exit
-fi
-
 if [ "$#" -ne 2 ]; then
    echo "Usage:  ./upload_to_bucket.sh bucket-name folder-name"
    exit
