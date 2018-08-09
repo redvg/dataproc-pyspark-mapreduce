@@ -31,6 +31,6 @@ submit job
 ![Screenshot](image.png)
 
 ## NB
-the above does take into account auth for bucket files \
+the above does not take into account auth for bucket files for gsutil in bash\
 either make files in the bucket public, create iam rules for cluster, \
 or access via oauth2 \
